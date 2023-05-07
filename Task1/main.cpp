@@ -1,25 +1,26 @@
 #include <iostream>
 using namespace std;
 
-struct Number
+class Number
 {
-    int img;
-    int real;
+    public:
+        int img;
+        int real;
 };
 
-void set_real(struct Number *num){
+void set_real(Number *num){
     cout<<"enter a real part\n";
     int real;
     cin>>real;
     num->real = real;
 }
-void set_imaginer(struct Number *num){
+void set_imaginer(Number *num){
     cout<<"enter a imaginer part\n";
     int img;
     cin>>img;
     num->img = img;
 }
-void print_number(struct Number *num){
+void print_number(Number *num){
     if(num->img > 0){
         cout<<"İmaginer Number is = "<<num->real<<'+'<<num->img<<'i'<<endl;
     }

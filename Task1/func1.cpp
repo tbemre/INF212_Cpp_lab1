@@ -1,5 +1,5 @@
-void set_real(struct Number *num);
-void set_real(struct Number *num){
+void set_real(Number *num);
+void set_real(Number *num){
     cout<<"enter a real part\n";
     int real;
     cin>>real;
